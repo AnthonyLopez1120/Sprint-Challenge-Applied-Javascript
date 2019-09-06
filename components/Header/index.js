@@ -22,7 +22,8 @@ function Header(){
     currentTemp.classList.add('temp');
 
     date.textContent = 'SMARCH 28, 2019';
-
+    title.textContent = 'Lambda Times';
+    currentTemp.textContent = '98°'
     
     headerDiv.appendChild(date);
     headerDiv.appendChild(title);
@@ -31,4 +32,4 @@ function Header(){
     return headerDiv;
 };
 
-headerContainer.appendChild(headerDiv);
+headerContainer.appendChild(Header());

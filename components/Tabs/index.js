@@ -10,25 +10,21 @@
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then(response =>{
-        console.log(response.data)
-        const topicName =response.data;//set data from api to varible 'topicName
+        console.log(response.data.topics)
+        response.data.topics.forEach(item => {
+            const titleName = Tabs(item);
+            topicsDiv.appendChild(titleName);
+        });
     });
-
+    
 const topicsDiv = document.querySelector('.topics')//sets '.topics class to topicsDiv to later append 'Tabs' function
 
-topicName.forEach(name => {//this forEach will take the name each name from the topicName array and append to the topicsDiv using the Tab componet
-    topicsDiv.appendChild(tabDiv)
-});
 
-function Tabs(data){
-    
-    const tabDiv = document.createElement('div');
-    
+
+function Tabs(name){    
+    const tabDiv = document.createElement('div');    
     tabDiv.classList.add('tab');
-
-    tabDiv.textContent = '${topicName}';
-
-    topicsDiv.appendChild(tabDiv);
-
+    tabDiv.textContent = name
+   
     return tabDiv;
 };
