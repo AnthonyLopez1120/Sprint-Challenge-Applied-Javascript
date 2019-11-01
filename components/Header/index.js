@@ -9,7 +9,7 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
-let topPart = document.querySelector('.top-bar')
+let topPart = document.querySelector('.header-container')
 topPart.appendChild(Header())
 
 function Header() {
