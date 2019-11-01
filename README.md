@@ -10,7 +10,7 @@ This is an individual assessment. All work must be your own. Your challenge scor
 
 You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your Tead Lead and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in Applied JavaScript.
 
-You have three hours to complete this challenge. Plan your time accordingly.
+You have three hours to complete this challenge. Plan your time accordingly
 
 ## Commits
 
@@ -30,13 +30,20 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+Document Object Model. Its an object representation of the HTML elements in a webpage. It is used to modify the page without having to go into the html or css files
+
 2. What is an event?
+Click, Scroll, Drag-Drop, are all events. Any user interaction.
 
 3. What is an event listener?
+A method that triggers a change when an event is detected
 
 4. Why would we convert a NodeList into an Array?
+We would change a NodeList into an Array so that we can use methods that apply to arrays. Nodes dont have many methods
 
 5. What is a component?
+
+reuseable code written in JS, HTML, and CSS. 
 
 ### Git Set up
 
